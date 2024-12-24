@@ -1,0 +1,83 @@
+---
+title: How to Build
+description: How to use our site and some information about TBP
+---
+
+import { Aside } from '@astrojs/starlight/components'
+
+<Aside type="caution">This article will be updated to cover a lot more areas. If you ran into any problems during the process, try closing the terminal and re-opening it again.</Aside>
+
+## Requirements
+
+To build TBP's source code, you need:
+- **[NodeJS](https://nodejs.org)** with NPM installed. Version `v20.3.0` or higher.
+- **Text Editor/IDE** like Visual Studio Code with Astro support/extension installed.
+- **Git** because we need it to download and save our changes.
+- **Terminal** because some of the components we use only run in CLI.
+- **Small knowledge on Markdown** because it's all you need to make pages is Markdown.
+
+## Cloning the repository and building.
+
+1. Create an account or use an existing account on [GitHub](https://github.com).
+2. Fork the repository using the button "Fork" on the top of the page.
+3. Open a CMD or PowerShell terminal and run
+
+```bash title="Terminal"
+git clone https://github.com/<your username here>/index.git --recurse-submodules
+```
+
+4. Enter the source code directory using
+
+```bash title="Terminal"
+cd index
+```
+
+5. Install dependencies
+
+```bash title="Terminal"
+npm install
+```
+
+6. Congratulations! You built the source code successfully!
+
+## Change the source code and hosting the site locally
+
+You need to change the site locally to test it. This section will teach you everything you need to change and host.
+
+1. Run this command. This command sets up a local host instance that you can open in your browser.
+
+```bash title="Terminal"
+npm run dev
+```
+
+2. Open `localhost:4321` on your browser.
+
+3. Congratulations! You successfully hosted the site. Don't worry, every change will make the browser instance change.
+
+## Commiting and Pull requesting.
+
+Before the changes make into the official site, we need to review them. For us to review your changes, you need to pull request them. Here's how to setup a pull request:
+
+1. Run this on your terminal, this command will add all of the necessary directories to the source code.
+
+```bash title="Terminal"
+git add .
+```
+
+2. Run this. This command will commit your changes.
+
+```bash title="Terminal"
+git commit -m "<Insert a title here that explains the changes.>"
+```
+
+3. Push the changes to your own repository.
+
+```bash title="Terminal"
+git push -u origin main
+```
+
+4. Go to your repository's page and create a pull request. Please follow these rules when making a pull request:
+
+- Put a good and descriptive title;
+- If the change is adding a fangame, put a link for the fangame;
+- Use the page template if the change is a fangame.

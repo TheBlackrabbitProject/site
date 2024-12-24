@@ -1,0 +1,58 @@
+---
+title: Page Template
+description: How to use our site and some information about TBP
+---
+
+```mdx title="my-page.mdx"
+---
+title: Insert Name of The Game
+description: 
+---
+
+import { Card, CardGrid, LinkCard } from '@astrojs/starlight/components';
+
+ {/* Information Grid */}
+
+<CardGrid>
+    <Card title='Release Date' icon='rocket'>
+        Insert Release Date Here
+    </Card>
+    <Card title='Developer' icon='laptop'>
+        Insert Developer Name Here
+    </Card>
+    <Card title='Game Engine' icon='puzzle'>
+        Insert game engine where the game was created here
+    </Card>
+    <Card title='Country of Origin' icon='information'>
+        Insert the country of origin of the game(the place where the director/developer lives)
+    </Card>
+</CardGrid>
+
+ {/* Game link */}
+
+<LinkCard
+        title="Get it"
+        href=""  {/* Insert the link inside the "" */}
+        description="'GAME' on STORE"  {/* Change "GAME" to the name of the game and store to where the game can be found(itch.io, steam, gamejolt) */}
+    />
+
+ {/* Description - change the lorem ipsum to your description. PLEASE DO NOT USE CHAT GPT, WRITE ON YOUR OWN WORDS */}
+
+   
+
+ {/* Gallery - Create a folder on /src/assets/fangames with the name of your fangame and put your images there, then the path here. The path needs to be "/src/assets/fangames/name of your folder/images" */}
+
+<CardGrid>
+    <Card>
+        ![]()
+    </Card>
+    <Card>
+        ![]()
+    </Card>
+    <Card>
+        ![]()
+    </Card>
+    <Card>
+        ![]()
+    </Card>
+</CardGrid>```
